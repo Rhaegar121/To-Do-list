@@ -1,0 +1,81 @@
+:root {
+  --primary-color: #2b2b2b;
+  --secondary-color: #dfdfdf;
+  --third-color: #8d8d8d;
+}
+
+.container {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: auto;
+  margin: 70px 0;
+  border: 0.2px solid var(--secondary-color);
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container input {
+  width: 440px;
+  outline: none;
+  border: none;
+  padding: 12px 0;
+}
+
+.container #title {
+  font-size: 18px;
+  color: var(--primary-color);
+  border-bottom: 0.2px solid var(--secondary-color);
+  margin: 0;
+  padding: 12px;
+  position: relative;
+}
+
+.container #title .fa-arrows-rotate {
+  position: absolute;
+  right: 15px;
+  font-size: 15px;
+  color: var(--third-color);
+}
+
+.container #input_list {
+  border-bottom: 0.2px solid var(--secondary-color);
+  width: 100%;
+}
+
+.container #input_list::placeholder {
+  padding-left: 12px;
+  font-style: italic;
+}
+
+.container #to_do_list .todolist {
+  border-bottom: 0.2px solid var(--secondary-color);
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.container #to_do_list .todolist [type="checkbox"] {
+  width: auto;
+  margin: 12px;
+}
+
+.container #to_do_list .todolist .listname::placeholder {
+  font-size: 16px;
+  color: var(--primary-color);
+  padding-left: 12px;
+}
+
+.container #to_do_list .todolist .fa-ellipsis-vertical {
+  font-size: 17px;
+  color: var(--third-color);
+}
+
+.container a {
+  color: var(--third-color);
+  text-decoration: none;
+  margin: 16px auto;
+  width: 500px;
+  text-align: center;
+  display: inline-block;
+}
