@@ -1,6 +1,8 @@
 import './style.css';
 import Library from './library.js';
-import { input, todoList, clearAll } from './variable.js';
+import {
+  input, todoList, clearAll, reload,
+} from './variable.js';
 
 window.onload = () => {
   const newLibrary = new Library();
@@ -28,3 +30,5 @@ window.onload = () => {
     newLibrary.clearAllCompleted();
   };
 };
+
+reload.onclick = () => window.location.reload();
