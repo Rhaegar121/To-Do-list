@@ -3,6 +3,7 @@ import Library from './library.js';
 
 const input = document.querySelector('#input_list');
 const todoList = document.querySelector('#to_do_list');
+const clearAll = document.querySelector('#clear_all');
 
 window.onload = () => {
   const newLibrary = new Library();
@@ -19,5 +20,9 @@ window.onload = () => {
       const data = e.target;
       newLibrary.removeList(data);
     }
+  };
+
+  clearAll.onclick = () => {
+    newLibrary.clearAllCompleted();
   };
 };
