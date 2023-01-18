@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="sample.png" alt="project sample" width="450"  height="auto" />
+  <img src="sample.png" alt="project sample" width="700"  height="auto" />
   <br/>
 
   <h3><b>To Do List</b></h3>
@@ -67,7 +67,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]()
+- [Live Demo Link](https://rhaegar121.github.io/To-Do-list/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

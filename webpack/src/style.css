@@ -51,6 +51,7 @@ body {
 
 .container #title .fa-arrows-rotate:hover {
   cursor: pointer;
+  color: var(--click-color);
 }
 
 .container #input_list {
