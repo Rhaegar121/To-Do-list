@@ -1,14 +1,13 @@
 import List from './list.js';
 import './style.css';
-
-const input = document.querySelector('#input_list');
-const todoList = document.querySelector('#to_do_list');
+import { input, todoList } from './variable.js';
 
 class Library {
   constructor() {
     this.Library = JSON.parse(localStorage.getItem('todolist')) || [];
   }
 
+  // add a list
   addList() {
     const newList = new List();
     newList.description = input.value;
@@ -20,6 +19,7 @@ class Library {
     input.value = '';
   }
 
+  // display lists
   showList() {
     todoList.innerHTML = '';
     this.Library.sort((a, b) => a.index - b.index);
@@ -43,6 +43,7 @@ class Library {
     this.checkList();
   }
 
+  // remove a list
   removeList(list) {
     list.parentElement.remove();
     this.Library = this.Library.filter((todolist, i) => i !== Number(list.parentElement.id));
@@ -51,12 +52,14 @@ class Library {
     this.showList();
   }
 
+  // rearrange the index
   indexList() {
     for (let i = 0; i < this.Library.length; i += 1) {
       this.Library[i].index = this.Library.indexOf(this.Library[i]) + 1;
     }
   }
 
+  // edit a list
   editList() {
     const listname = document.querySelectorAll('.listname');
     listname.forEach((list, index) => {
@@ -67,6 +70,7 @@ class Library {
     });
   }
 
+  // check a list
   checkList() {
     const check = document.querySelectorAll('.check');
     check.forEach((checkbox, index) => {
@@ -74,15 +78,18 @@ class Library {
         if (this.Library[index].completed === true) {
           this.Library[index].completed = false;
           check[index].nextElementSibling.style.textDecoration = 'none';
+          check[index].nextElementSibling.style.color = '#A0522D';
         } else {
           this.Library[index].completed = true;
           check[index].nextElementSibling.style.textDecoration = 'line-through';
+          check[index].nextElementSibling.style.color = '#DC143C';
         }
         localStorage.setItem('todolist', JSON.stringify(this.Library));
       });
     });
   }
 
+  // clear all checked lists
   clearAllCompleted() {
     this.Library = this.Library.filter((list) => list.completed === false);
     this.indexList();
