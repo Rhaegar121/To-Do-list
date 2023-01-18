@@ -1,5 +1,5 @@
 import './style.css';
-import Library from './library';
+import Library from './library.js';
 
 const input = document.querySelector('#input_list');
 const todoList = document.querySelector('#to_do_list');
@@ -12,12 +12,12 @@ window.onload = () => {
     if (e.keyCode === 13) {
       newLibrary.addList();
     }
-  }
+  };
 
   todoList.onclick = (e) => {
     if (e.target.className.includes('fa-trash-can')) {
-      let data = e.target;
+      const data = e.target;
       newLibrary.removeList(data);
-    } 
-  }
-}
+    }
+  };
+};
