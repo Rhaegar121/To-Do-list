@@ -1,9 +1,9 @@
 :root {
-  --text-color: #A0522D;
-  --border-color: #EEE8AA;
-  --body-color: #FFFACD;
+  --text-color: #a0522d;
+  --border-color: #eee8aa;
+  --body-color: #fffacd;
   --container-color: #fff;
-  --click-color: #DC143C;
+  --click-color: #dc143c;
 }
 
 body {
@@ -70,7 +70,7 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
-  padding: 2.8px 0px;
+  padding: 2.8px 0;
 }
 
 .container #to_do_list .todolist [type="checkbox"] {
