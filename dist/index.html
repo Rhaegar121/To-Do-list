@@ -1,1 +1,19 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>To Do list</title><script defer="defer" src="/runtime.js"></script><script defer="defer" src="/main.js"></script></head><body><ul><li id="title">Today's To Do</li><li><input placeholder="Add to your list..."></li><li id="to_do_list"></li><li><a href="#">Clear all completed</a></li></ul></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do list</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script defer src="runtime.js"></script><script defer src="main.js"></script></head>
+<body>
+    <div class="container">
+        <h1 id="title">Today's To Do<i class="fa-solid fa-arrows-rotate"></i></h1>
+        <input type="text" id="input_list" placeholder="Add to your list...">
+        <div id="to_do_list">
+            <!-- dynamically in js -->
+        </div>
+        <a href="#" id="clear_all">Clear all completed</a>
+    </div>
+</body>
+</html>
