@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  position: fixed;
+  position: absolute;
   left: 50%;
   transform: translateX(-50%);
   width: 600px;

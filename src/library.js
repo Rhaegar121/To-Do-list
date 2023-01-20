@@ -24,19 +24,11 @@ class Library {
     todoList.innerHTML = '';
     this.Library.sort((a, b) => a.index - b.index);
     this.Library.forEach((todolist, i) => {
-      if (todolist.completed === true) {
-        todoList.innerHTML += `<div id="${i}" class="todolist">
-        <input type="checkbox" id="${todolist.index}" class="check" value="${todolist.completed}" checked>
+      todoList.innerHTML += `<div id="${i}" class="todolist">
+        <input type="checkbox" id="${todolist.index}" class="check" value="${todolist.completed}" ${todolist.completed === true ? 'checked' : ''}>
         <input type="text" id="${todolist.index}" value="${todolist.description}" class="listname">
         <i id="${todolist.index}" class="fa-regular fa-trash-can"></i>
         </div>`;
-      } else {
-        todoList.innerHTML += `<div id="${i}" class="todolist">
-        <input type="checkbox" id="${todolist.index}" class="check" value="${todolist.completed}">
-        <input type="text" id="${todolist.index}" value="${todolist.description}" class="listname">
-        <i id="${todolist.index}" class="fa-regular fa-trash-can"></i>
-        </div>`;
-      }
     });
     localStorage.setItem('todolist', JSON.stringify(this.Library));
     this.editList();

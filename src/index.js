@@ -1,7 +1,7 @@
 import './style.css';
 import Library from './library.js';
 import {
-  input, todoList, clearAll, reload,
+  input, todoList, clearAll, reload, form,
 } from './variable.js';
 
 window.onload = () => {
@@ -11,11 +11,16 @@ window.onload = () => {
   newLibrary.showList();
 
   // add a list
-  input.onkeypress = (e) => {
-    if (e.keyCode === 13) {
-      newLibrary.addList();
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (input.value.trim() !== '') {
+      input.onkeypress = (e) => {
+        if (e.keyCode === 13) {
+          newLibrary.addList();
+        }
+      };
     }
-  };
+  });
 
   // remove a list
   todoList.onclick = (e) => {
