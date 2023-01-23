@@ -109,3 +109,8 @@ body {
 .container a:active {
   color: var(--click-color);
 }
+
+#error {
+  color: #dc143c;
+  margin: 15px;
+}
