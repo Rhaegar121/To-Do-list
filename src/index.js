@@ -24,15 +24,12 @@ window.onload = () => {
   // remove a list
   todoList.onclick = (e) => {
     if (e.target.className.includes('fa-trash-can')) {
-      const data = e.target;
-      newLibrary.removeList(data);
+      newLibrary.removeList(e.target);
     }
   };
 
   // clear all checked lists
-  clearAll.onclick = () => {
-    newLibrary.clearAllCompleted();
-  };
+  clearAll.onclick = () => newLibrary.clearAllCompleted();
 };
 
 reload.onclick = () => window.location.reload();

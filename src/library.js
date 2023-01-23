@@ -22,7 +22,6 @@ class Library {
   // display lists
   showList() {
     todoList.innerHTML = '';
-    this.Library.sort((a, b) => a.index - b.index);
     this.Library.forEach((todolist, i) => {
       todoList.innerHTML += `<div id="${i}" class="todolist">
         <input type="checkbox" id="${todolist.index}" class="check" value="${todolist.completed}" ${todolist.completed === true ? 'checked' : ''}>
