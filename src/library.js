@@ -13,7 +13,7 @@ class Library {
     newList.index = this.Library.length + 1;
     this.Library.push(newList);
     localStorage.setItem('todolist', JSON.stringify(this.Library));
-    this.showList(); 
+    this.showList();
   }
 
   // display lists
