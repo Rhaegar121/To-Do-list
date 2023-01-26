@@ -23,8 +23,9 @@ describe('Testing To Do list: part 1', () => {
     const newlist = new Library();
     newlist.addList('hi');
     newlist.addList('hi');
+    newlist.addList('hi');
     newlist.removeList(0);
     const storage = JSON.parse(window.localStorage.getItem('todolist'));
-    expect(storage).toHaveLength(1);
+    expect(storage).toHaveLength(2);
   });
 });
