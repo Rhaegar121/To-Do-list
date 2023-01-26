@@ -25,8 +25,9 @@ describe('Testing To Do list: part 1', () => {
     newlist.addList('hi');
     newlist.addList('hi');
     newlist.removeList(0);
+    newlist.removeList(1);
     const storage = JSON.parse(window.localStorage.getItem('todolist'));
-    expect(storage).toHaveLength(2);
+    expect(storage).toHaveLength(1);
   });
 
   test('updating completed status', () => {
@@ -39,7 +40,7 @@ describe('Testing To Do list: part 1', () => {
 
   test('editing list description', () => {
     const newlist = new Library();
-    newlist.addList('hi');
+    newlist.addList('Hi Barry');
     newlist.editList('new descp', 0);
     const storage = JSON.parse(window.localStorage.getItem('todolist'));
     expect(storage[0].description).toBe('new descp');
