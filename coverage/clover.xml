@@ -1,58 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1674735398579" clover="3.2.0">
-  <project timestamp="1674735398579" name="All files">
-    <metrics statements="46" coveredstatements="31" conditionals="9" coveredconditionals="5" methods="17" coveredmethods="13" elements="72" coveredelements="49" complexity="0" loc="46" ncloc="46" packages="1" files="2" classes="2"/>
+<coverage generated="1674740658455" clover="3.2.0">
+  <project timestamp="1674740658455" name="All files">
+    <metrics statements="47" coveredstatements="39" conditionals="7" coveredconditionals="5" methods="16" coveredmethods="14" elements="70" coveredelements="58" complexity="0" loc="47" ncloc="47" packages="1" files="2" classes="2"/>
     <file name="library.js" path="C:\Users\95942\OneDrive\Desktop\Programming\Microverse\Module 2\To-Do-list\src\library.js">
-      <metrics statements="40" coveredstatements="26" conditionals="6" coveredconditionals="3" methods="15" coveredmethods="11"/>
-      <line num="5" count="2" type="cond" truecount="2" falsecount="0"/>
-      <line num="10" count="4" type="stmt"/>
-      <line num="11" count="4" type="stmt"/>
-      <line num="12" count="4" type="stmt"/>
-      <line num="13" count="4" type="stmt"/>
-      <line num="14" count="4" type="stmt"/>
-      <line num="15" count="4" type="stmt"/>
-      <line num="16" count="4" type="stmt"/>
-      <line num="22" count="5" type="stmt"/>
-      <line num="23" count="5" type="stmt"/>
-      <line num="24" count="9" type="stmt"/>
-      <line num="30" count="5" type="stmt"/>
-      <line num="31" count="5" type="stmt"/>
-      <line num="32" count="5" type="stmt"/>
-      <line num="37" count="3" type="stmt"/>
-      <line num="38" count="1" type="stmt"/>
-      <line num="39" count="1" type="stmt"/>
-      <line num="40" count="1" type="stmt"/>
-      <line num="45" count="1" type="stmt"/>
-      <line num="46" count="2" type="stmt"/>
-      <line num="52" count="5" type="stmt"/>
-      <line num="53" count="5" type="stmt"/>
-      <line num="54" count="9" type="stmt"/>
-      <line num="55" count="0" type="stmt"/>
-      <line num="56" count="0" type="stmt"/>
-      <line num="63" count="5" type="stmt"/>
-      <line num="64" count="5" type="stmt"/>
-      <line num="65" count="9" type="stmt"/>
-      <line num="66" count="0" type="cond" truecount="0" falsecount="2"/>
-      <line num="67" count="0" type="stmt"/>
-      <line num="68" count="0" type="stmt"/>
-      <line num="69" count="0" type="stmt"/>
-      <line num="71" count="0" type="stmt"/>
-      <line num="72" count="0" type="stmt"/>
-      <line num="73" count="0" type="stmt"/>
-      <line num="75" count="0" type="stmt"/>
-      <line num="82" count="0" type="stmt"/>
-      <line num="83" count="0" type="stmt"/>
-      <line num="84" count="0" type="stmt"/>
-      <line num="85" count="0" type="stmt"/>
+      <metrics statements="44" coveredstatements="36" conditionals="6" coveredconditionals="4" methods="15" coveredmethods="13"/>
+      <line num="5" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="10" count="8" type="stmt"/>
+      <line num="11" count="8" type="stmt"/>
+      <line num="12" count="8" type="stmt"/>
+      <line num="13" count="8" type="stmt"/>
+      <line num="14" count="8" type="stmt"/>
+      <line num="15" count="8" type="stmt"/>
+      <line num="16" count="8" type="stmt"/>
+      <line num="22" count="10" type="stmt"/>
+      <line num="23" count="10" type="stmt"/>
+      <line num="24" count="15" type="stmt"/>
+      <line num="30" count="10" type="stmt"/>
+      <line num="33" count="10" type="stmt"/>
+      <line num="34" count="10" type="stmt"/>
+      <line num="35" count="15" type="stmt"/>
+      <line num="36" count="0" type="stmt"/>
+      <line num="37" count="0" type="stmt"/>
+      <line num="38" count="0" type="stmt"/>
+      <line num="43" count="10" type="stmt"/>
+      <line num="44" count="10" type="stmt"/>
+      <line num="45" count="15" type="stmt"/>
+      <line num="46" count="0" type="stmt"/>
+      <line num="47" count="0" type="stmt"/>
+      <line num="54" count="3" type="stmt"/>
+      <line num="55" count="1" type="stmt"/>
+      <line num="56" count="1" type="stmt"/>
+      <line num="57" count="1" type="stmt"/>
+      <line num="62" count="2" type="stmt"/>
+      <line num="63" count="3" type="stmt"/>
+      <line num="69" count="1" type="stmt"/>
+      <line num="70" count="1" type="stmt"/>
+      <line num="75" count="2" type="stmt"/>
+      <line num="76" count="2" type="cond" truecount="1" falsecount="1"/>
+      <line num="77" count="0" type="stmt"/>
+      <line num="78" count="0" type="stmt"/>
+      <line num="79" count="0" type="stmt"/>
+      <line num="81" count="2" type="stmt"/>
+      <line num="82" count="2" type="stmt"/>
+      <line num="83" count="2" type="stmt"/>
+      <line num="85" count="2" type="stmt"/>
+      <line num="90" count="2" type="stmt"/>
+      <line num="91" count="1" type="stmt"/>
+      <line num="92" count="1" type="stmt"/>
+      <line num="93" count="1" type="stmt"/>
     </file>
     <file name="list.js" path="C:\Users\95942\OneDrive\Desktop\Programming\Microverse\Module 2\To-Do-list\src\list.js">
-      <metrics statements="6" coveredstatements="5" conditionals="3" coveredconditionals="2" methods="2" coveredmethods="2"/>
-      <line num="3" count="5" type="stmt"/>
-      <line num="4" count="5" type="stmt"/>
-      <line num="5" count="5" type="stmt"/>
-      <line num="9" count="1" type="cond" truecount="1" falsecount="1"/>
-      <line num="10" count="0" type="stmt"/>
-      <line num="12" count="1" type="stmt"/>
+      <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <line num="3" count="8" type="stmt"/>
+      <line num="4" count="8" type="stmt"/>
+      <line num="5" count="8" type="stmt"/>
     </file>
   </project>
 </coverage>

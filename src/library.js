@@ -14,7 +14,7 @@ class Library {
     this.Library.push(newList);
     localStorage.setItem('todolist', JSON.stringify(this.Library));
     this.showList();
-    // input.value = '';
+    document.querySelector('#input_list').value = '';
   }
 
   // display lists
@@ -28,8 +28,25 @@ class Library {
         </div>`;
     });
     localStorage.setItem('todolist', JSON.stringify(this.Library));
-    this.editList();
-    this.checkList();
+
+    // edit list description
+    const listname = document.querySelectorAll('.listname');
+    listname.forEach((list, index) => {
+      list.addEventListener('input', () => {
+        const descp = list.value;
+        this.editList(descp, index);
+        localStorage.setItem('todolist', JSON.stringify(this.Library));
+      });
+    });
+
+    // update check list
+    const check = document.querySelectorAll('.check');
+    check.forEach((checkbox, index) => {
+      checkbox.addEventListener('change', () => {
+        this.checkList(index);
+        localStorage.setItem('todolist', JSON.stringify(this.Library));
+      });
+    });
   }
 
   // remove a list
@@ -48,33 +65,24 @@ class Library {
   }
 
   // edit a list
-  editList() {
-    const listname = document.querySelectorAll('.listname');
-    listname.forEach((list, index) => {
-      list.addEventListener('input', () => {
-        this.Library[index].description = list.value;
-        localStorage.setItem('todolist', JSON.stringify(this.Library));
-      });
-    });
+  editList(descp, index) {
+    this.Library[index].description = descp;
+    localStorage.setItem('todolist', JSON.stringify(this.Library));
   }
 
   // check a list
-  checkList() {
+  checkList(index) {
     const check = document.querySelectorAll('.check');
-    check.forEach((checkbox, index) => {
-      checkbox.addEventListener('change', () => {
-        if (this.Library[index].completed === true) {
-          this.Library[index].completed = false;
-          check[index].nextElementSibling.style.textDecoration = 'none';
-          check[index].nextElementSibling.style.color = '#A0522D';
-        } else {
-          this.Library[index].completed = true;
-          check[index].nextElementSibling.style.textDecoration = 'line-through';
-          check[index].nextElementSibling.style.color = '#DC143C';
-        }
-        localStorage.setItem('todolist', JSON.stringify(this.Library));
-      });
-    });
+    if (this.Library[index].completed === true) {
+      this.Library[index].completed = false;
+      check[index].nextElementSibling.style.textDecoration = 'none';
+      check[index].nextElementSibling.style.color = '#A0522D';
+    } else {
+      this.Library[index].completed = true;
+      check[index].nextElementSibling.style.textDecoration = 'line-through';
+      check[index].nextElementSibling.style.color = '#DC143C';
+    }
+    localStorage.setItem('todolist', JSON.stringify(this.Library));
   }
 
   // clear all checked lists
