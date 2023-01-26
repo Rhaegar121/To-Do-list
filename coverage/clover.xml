@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1674723483235" clover="3.2.0">
+  <project timestamp="1674723483235" name="All files">
+    <metrics statements="43" coveredstatements="29" conditionals="7" coveredconditionals="4" methods="16" coveredmethods="12" elements="66" coveredelements="45" complexity="0" loc="43" ncloc="43" packages="1" files="2" classes="2"/>
+    <file name="library.js" path="C:\Users\95942\OneDrive\Desktop\Programming\Microverse\Module 2\To-Do-list\src\library.js">
+      <metrics statements="40" coveredstatements="26" conditionals="6" coveredconditionals="3" methods="15" coveredmethods="11"/>
+      <line num="7" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="12" count="3" type="stmt"/>
+      <line num="13" count="3" type="stmt"/>
+      <line num="14" count="3" type="stmt"/>
+      <line num="15" count="3" type="stmt"/>
+      <line num="16" count="3" type="stmt"/>
+      <line num="17" count="3" type="stmt"/>
+      <line num="18" count="3" type="stmt"/>
+      <line num="24" count="4" type="stmt"/>
+      <line num="25" count="4" type="stmt"/>
+      <line num="26" count="5" type="stmt"/>
+      <line num="32" count="4" type="stmt"/>
+      <line num="33" count="4" type="stmt"/>
+      <line num="34" count="4" type="stmt"/>
+      <line num="39" count="2" type="stmt"/>
+      <line num="40" count="1" type="stmt"/>
+      <line num="41" count="1" type="stmt"/>
+      <line num="42" count="1" type="stmt"/>
+      <line num="47" count="1" type="stmt"/>
+      <line num="48" count="1" type="stmt"/>
+      <line num="54" count="4" type="stmt"/>
+      <line num="55" count="4" type="stmt"/>
+      <line num="56" count="5" type="stmt"/>
+      <line num="57" count="0" type="stmt"/>
+      <line num="58" count="0" type="stmt"/>
+      <line num="65" count="4" type="stmt"/>
+      <line num="66" count="4" type="stmt"/>
+      <line num="67" count="5" type="stmt"/>
+      <line num="68" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="69" count="0" type="stmt"/>
+      <line num="70" count="0" type="stmt"/>
+      <line num="71" count="0" type="stmt"/>
+      <line num="73" count="0" type="stmt"/>
+      <line num="74" count="0" type="stmt"/>
+      <line num="75" count="0" type="stmt"/>
+      <line num="77" count="0" type="stmt"/>
+      <line num="84" count="0" type="stmt"/>
+      <line num="85" count="0" type="stmt"/>
+      <line num="86" count="0" type="stmt"/>
+      <line num="87" count="0" type="stmt"/>
+    </file>
+    <file name="list.js" path="C:\Users\95942\OneDrive\Desktop\Programming\Microverse\Module 2\To-Do-list\src\list.js">
+      <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <line num="3" count="3" type="stmt"/>
+      <line num="4" count="3" type="stmt"/>
+      <line num="5" count="3" type="stmt"/>
+    </file>
+  </project>
+</coverage>

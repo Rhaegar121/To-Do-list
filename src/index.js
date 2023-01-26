@@ -15,7 +15,7 @@ window.onload = () => {
     e.preventDefault();
     if (input.value.trim() === '' || input.value.trim() === null) {
       error.textContent = 'Please fill a correct task';
-    } else newLibrary.addList();
+    } else newLibrary.addList(input.value);
     input.onkeypress = () => {
       input.parentElement.querySelector('#error').textContent = '';
     };
@@ -24,7 +24,8 @@ window.onload = () => {
   // remove a list
   todoList.onclick = (e) => {
     if (e.target.className.includes('fa-trash-can')) {
-      newLibrary.removeList(e.target);
+      const number = e.target.parentElement.id;
+      newLibrary.removeList(number);
     }
   };
 

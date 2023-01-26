@@ -1,6 +1,4 @@
 import List from './list.js';
-import './style.css';
-import { input, todoList } from './variable.js';
 
 class Library {
   constructor() {
@@ -8,22 +6,22 @@ class Library {
   }
 
   // add a list
-  addList() {
+  addList(descp) {
     const newList = new List();
-    newList.description = input.value;
+    newList.description = descp;
     newList.completed = false;
     newList.index = this.Library.length + 1;
     this.Library.push(newList);
     localStorage.setItem('todolist', JSON.stringify(this.Library));
     this.showList();
-    input.value = '';
+    // input.value = '';
   }
 
   // display lists
   showList() {
-    todoList.innerHTML = '';
+    document.querySelector('#to_do_list').innerHTML = '';
     this.Library.forEach((todolist, i) => {
-      todoList.innerHTML += `<div id="${i}" class="todolist">
+      document.querySelector('#to_do_list').innerHTML += `<div id="${i}" class="todolist">
         <input type="checkbox" id="${todolist.index}" class="check" value="${todolist.completed}" ${todolist.completed === true ? 'checked' : ''}>
         <input type="text" id="${todolist.index}" value="${todolist.description}" class="listname">
         <i id="${todolist.index}" class="fa-regular fa-trash-can"></i>
@@ -35,9 +33,8 @@ class Library {
   }
 
   // remove a list
-  removeList(list) {
-    list.parentElement.remove();
-    this.Library = this.Library.filter((todolist, i) => i !== Number(list.parentElement.id));
+  removeList(number) {
+    this.Library = this.Library.filter((todolist, i) => i !== Number(number));
     this.indexList();
     localStorage.setItem('todolist', JSON.stringify(this.Library));
     this.showList();
