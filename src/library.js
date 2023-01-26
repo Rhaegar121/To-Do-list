@@ -18,7 +18,8 @@ class Library {
 
   // display lists
   showList() {
-    document.querySelector('#to_do_list').innerHTML = '';
+    const todoList = document.querySelector('#to_do_list');
+    todoList.innerHTML = '';
     this.Library.forEach((todolist, i) => {
       document.querySelector('#to_do_list').innerHTML += `<div id="${i}" class="todolist">
         <input type="checkbox" id="${todolist.index}" class="check" value="${todolist.completed}" ${todolist.completed === true ? 'checked' : ''}>
