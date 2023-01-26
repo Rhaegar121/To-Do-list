@@ -118,6 +118,11 @@ Use Github pages for free and secure deployment.
 - Twitter: [@twitterhandle](https://twitter.com/20Rhaegar)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/kaung-myat-kyaw-391720227)
 
+👤 **Emeka Emmanuel**
+
+- GitHub: [@emekaemmanuel](https://github.com/emekaemmanuel)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/emeka-ugboaja-167820226)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
