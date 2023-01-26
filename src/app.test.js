@@ -1,6 +1,5 @@
 /** @jest-environment jsdom */
 import Library from './library.js';
-import List from './list.js';
 
 describe('Testing To Do list: part 1', () => {
   beforeEach(() => {
@@ -9,7 +8,7 @@ describe('Testing To Do list: part 1', () => {
     localStorage.setItem.mockClear();
     document.body.innerHTML = `
     <div id="to_do_list">
-        </div>
+    </div>
 `;
   });
 
@@ -30,10 +29,29 @@ describe('Testing To Do list: part 1', () => {
     expect(storage).toHaveLength(2);
   });
 
-  test('updating complete status', () => {
-    const newlist = new List('hi');
-    expect(newlist.completed).toBe(false);
-    newlist.updateList();
-    expect(newlist.completed).toBe(true);
+  test('updating completed status', () => {
+    const newlist = new Library();
+    newlist.addList('hi');
+    newlist.checkList(0);
+    const storage = JSON.parse(window.localStorage.getItem('todolist'));
+    expect(storage[0].completed).toBe(true);
+  });
+
+  test('editing list description', () => {
+    const newlist = new Library();
+    newlist.addList('hi');
+    newlist.editList('new descp', 0);
+    const storage = JSON.parse(window.localStorage.getItem('todolist'));
+    expect(storage[0].description).toBe('new descp');
+  });
+
+  test('clearing all completed tasks', () => {
+    const newlist = new Library();
+    newlist.addList('hi');
+    newlist.addList('hi');
+    newlist.checkList(0);
+    newlist.clearAllCompleted();
+    const storage = JSON.parse(window.localStorage.getItem('todolist'));
+    expect(storage).toHaveLength(1);
   });
 });
