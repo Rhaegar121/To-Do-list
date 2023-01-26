@@ -4,6 +4,14 @@ class List {
     this.index = index;
     this.completed = completed;
   }
+
+  updateList() {
+    if (this.completed) {
+      this.completed = false;
+    } else {
+      this.completed = true;
+    }
+  }
 }
 
 export default List;

@@ -1,5 +1,6 @@
 /** @jest-environment jsdom */
 import Library from './library.js';
+import List from './list.js';
 
 describe('Testing To Do list: part 1', () => {
   beforeEach(() => {
@@ -27,5 +28,12 @@ describe('Testing To Do list: part 1', () => {
     newlist.removeList(0);
     const storage = JSON.parse(window.localStorage.getItem('todolist'));
     expect(storage).toHaveLength(2);
+  });
+
+  test('updating complete status', () => {
+    const newlist = new List('hi');
+    expect(newlist.completed).toBe(false);
+    newlist.updateList();
+    expect(newlist.completed).toBe(true);
   });
 });
