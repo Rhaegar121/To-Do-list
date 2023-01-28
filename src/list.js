@@ -5,5 +5,4 @@ class List {
     this.completed = completed;
   }
 }
-
 export default List;

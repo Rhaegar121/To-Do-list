@@ -1,13 +1,5 @@
 <a name="readme-top"></a>
 
-<div align="center">
-  <img src="sample.png" alt="project sample" width="700"  height="auto" />
-  <br/>
-
-  <h3><b>To Do List</b></h3>
-
-</div>
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -34,7 +26,15 @@
 
 # 📖 To Do List <a name="about-project"></a>
 
-> This is the JavaScript project with ES6 syntax and webpack in Microverse module 2.
+<div align="center">
+  <img src="sample.png" alt="project sample" width="700"  height="auto" />
+  <br/>
+
+  <h3><b>To Do List</b></h3>
+
+</div>
+
+> "To-do list" is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. Mainly built with javascript in Microverse Module 2.
 
 **To Do List** is a HTML, CSS and JavaScript based project.
 
@@ -128,9 +128,6 @@ Use Github pages for free and secure deployment.
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-- [ ] **Interactive list**
-- [ ] **Add and remove items**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
