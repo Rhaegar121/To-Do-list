@@ -83,6 +83,7 @@ body {
   font-size: 19px;
   color: var(--text-color);
   padding-left: 12px;
+  text-transform: capitalize;
 }
 
 .container #to_do_list .todolist .fa-trash-can {
