@@ -6,6 +6,18 @@
   --click-color: #dc143c;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--container-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+}
+
 body {
   background-color: var(--body-color);
 }
