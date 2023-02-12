@@ -7,7 +7,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -15,7 +15,8 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--border-color);
+  background: var(--text-color);
+  border-radius: 10px;
 }
 
 body {
@@ -23,15 +24,16 @@ body {
 }
 
 .container {
-  position: absolute;
+  position: fixed;
   left: 50%;
   transform: translateX(-50%);
   width: 600px;
-  height: auto;
-  margin: 100px 0;
+  height: 85vh;
+  margin-top: 60px;
   border: 0.2px solid var(--border-color);
   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: var(--container-color);
+  overflow: -moz-hidden-unscrollable;
 }
 
 .container input {
@@ -78,6 +80,14 @@ body {
   color: var(--text-color);
 }
 
+.container #to_do_list {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  height: 60vh;
+}
+
 .container #to_do_list .todolist {
   border-bottom: 0.2px solid var(--border-color);
   display: flex;
@@ -111,8 +121,8 @@ body {
 
 .container a {
   color: var(--text-color);
-  font-size: 16.5px;
-  text-decoration: none;
+  font-size: 18px;
+  text-decoration: underline;
   margin: 21px auto;
   width: 600px;
   text-align: center;
