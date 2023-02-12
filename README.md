@@ -89,10 +89,12 @@ Checkout the project repository <a href="https://github.com/Rhaegar121/To-Do-lis
 ### Install
 
 You can use the repository HTTPS or SSH urls to clone the project on your local machine or download the ZIP folder and extract its contents.
+Run npm install to install the dev dependencies for linters and webpack.
+Run npm build to build the application with webpack .
 
 ### Usage
 
-Run the index.html file in the root directory of the project using any browser.
+Run npm run start to start the development server.
 
 ### Run tests
 
@@ -128,6 +130,8 @@ Use Github pages for free and secure deployment.
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
+
+- **Draggable list**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
