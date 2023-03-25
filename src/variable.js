@@ -4,7 +4,8 @@ const clearAll = document.querySelector('#clear_all');
 const reload = document.querySelector('.fa-arrows-rotate');
 const form = document.querySelector('form');
 const error = document.querySelector('#error');
+const theme = document.querySelector('#theme');
 
 export {
-  input, todoList, clearAll, reload, form, error,
+  input, todoList, clearAll, reload, form, error, theme,
 };
