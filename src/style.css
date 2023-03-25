@@ -56,6 +56,11 @@ body {
   align-items: baseline;
 }
 
+.container #title #theme:hover {
+  cursor: pointer;
+  color: var(--click-color);
+}
+
 .container #title .fa-arrows-rotate {
   font-size: 18px;
   color: var(--text-color);
