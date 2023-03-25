@@ -9,15 +9,15 @@ window.onload = () => {
 
   // change theme
   theme.onclick = () => {
-    document.body.classList.toggle("dark-theme")
-    if (document.body.classList.contains("dark-theme")) {
-      theme.classList.remove("fa-moon")
-      theme.classList.add("fa-sun")
+    document.body.classList.toggle('dark-theme');
+    if (document.body.classList.contains('dark-theme')) {
+      theme.classList.remove('fa-moon');
+      theme.classList.add('fa-sun');
     } else {
-      theme.classList.add("fa-moon")
-      theme.classList.remove("fa-sun")
+      theme.classList.add('fa-moon');
+      theme.classList.remove('fa-sun');
     }
-}
+  };
 
   // display lists
   newLibrary.showList();
