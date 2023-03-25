@@ -51,14 +51,12 @@ body {
   margin: 0;
   padding: 18px;
   text-align: center;
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .container #title .fa-arrows-rotate {
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
   font-size: 18px;
   color: var(--text-color);
 }
