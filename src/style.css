@@ -6,6 +6,13 @@
   --click-color: #dc143c;
 }
 
+.dark-theme {
+  --text-color: #BC8F8F;
+  --border-color: #A0522D;
+  --body-color: #000;
+  --container-color: #461313;
+}
+
 ::-webkit-scrollbar {
   width: 6px;
 }
