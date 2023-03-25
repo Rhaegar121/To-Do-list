@@ -1,11 +1,23 @@
 import './style.css';
 import Library from './library.js';
 import {
-  input, todoList, clearAll, reload, form, error,
+  input, todoList, clearAll, reload, form, error, theme,
 } from './variable.js';
 
 window.onload = () => {
   const newLibrary = new Library();
+
+  // change theme
+  theme.onclick = () => {
+    document.body.classList.toggle("dark-theme")
+    if (document.body.classList.contains("dark-theme")) {
+      theme.classList.remove("fa-moon")
+      theme.classList.add("fa-sun")
+    } else {
+      theme.classList.add("fa-moon")
+      theme.classList.remove("fa-sun")
+    }
+}
 
   // display lists
   newLibrary.showList();
