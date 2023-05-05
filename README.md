@@ -27,7 +27,7 @@
 # 📖 To Do List <a name="about-project"></a>
 
 <div align="center">
-  <img src="sample.png" alt="project sample" width="700"  height="auto" />
+  <img src="todolist.png" alt="project sample" width="700"  height="auto" />
   <br/>
 
   <h3><b>To Do List</b></h3>
