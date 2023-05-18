@@ -117,8 +117,8 @@ Use Github pages for free and secure deployment.
 👤 **Kaung Myat Kyaw**
 
 - GitHub: [@githubhandle](https://github.com/Rhaegar121)
-- Twitter: [@twitterhandle](https://twitter.com/20Rhaegar)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kaung-myat-kyaw-391720227)
+- Twitter: [@twitterhandle](https://twitter.com/Rhaegar121)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kaungmyatkyaw/)
 
 👤 **Emeka Emmanuel**
 
