@@ -79,6 +79,7 @@ body {
 }
 
 .container #input_list {
+  color: var(--text-color);
   border-bottom: 0.2px solid var(--border-color);
   width: 95%;
   padding: 18px 15px;
